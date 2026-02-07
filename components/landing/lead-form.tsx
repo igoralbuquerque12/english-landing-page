@@ -7,11 +7,11 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { trpc } from "@/lib/trpc-client"
-import { Lock, MessageCircle } from "lucide-react"
+import { Lock } from "lucide-react"
 
 function formatPhone(value: string): string {
   const numbers = value.replace(/\D/g, "")
-  
+
   if (numbers.length <= 2) {
     return numbers.length ? `(${numbers}` : ""
   }
@@ -57,7 +57,7 @@ export function LeadForm() {
       <div className="container mx-auto px-4 max-w-lg">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
-            Pronto para Comecar?
+            Pronto para Começar?
           </h2>
           <p className="text-slate-600">
             Deixe seus dados abaixo. Entraremos em contato em breve para agendar
@@ -130,7 +130,7 @@ export function LeadForm() {
                 disabled={createLead.isPending || name.trim().length < 2 || phone.length < 14}
                 className="w-full h-12 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-medium text-base"
               >
-                {createLead.isPending ? "Enviando..." : "Quero Comecar Agora!"}
+                {createLead.isPending ? "Enviando..." : "Quero Começar Agora!"}
               </Button>
 
               {createLead.isError && (
@@ -141,30 +141,14 @@ export function LeadForm() {
 
               <p className="text-xs text-slate-400 text-center flex items-center justify-center gap-1">
                 <Lock className="w-3 h-3" />
-                Seus dados estao seguros e criptografados. Nunca compartilharemos
+                Seus dados estão seguros e criptografados. Nunca compartilharemos
                 com terceiros.
               </p>
             </div>
           </form>
         )}
-
-        <div className="text-center mt-8">
-          <p className="text-slate-600 mb-4">Ou fale comigo direto no WhatsApp:</p>
-          <Button
-            asChild
-            className="bg-green-500 hover:bg-green-600 text-white rounded-full px-6"
-          >
-            <a
-              href="https://wa.me/5500000000000"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <MessageCircle className="w-4 h-4 mr-2" />
-              Abrir WhatsApp
-            </a>
-          </Button>
-        </div>
       </div>
     </section>
   )
 }
+
