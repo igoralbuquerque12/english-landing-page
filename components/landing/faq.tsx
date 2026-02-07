@@ -9,38 +9,38 @@ import {
 
 const faqs = [
   {
-    question: "Para quem sao essas aulas?",
+    question: "Para quem são essas aulas?",
     answer:
-      "As aulas sao para qualquer pessoa que queira aprender ingles de forma personalizada, seja para carreira, viagens, estudos ou simplesmente para se comunicar melhor. Do iniciante ao avancado, adapto o conteudo para suas necessidades.",
+      "As aulas são para qualquer pessoa que queira aprender inglês de forma personalizada, seja para carreira, viagens, estudos ou simplesmente para se comunicar melhor. Do iniciante ao avançado, adapto o conteúdo para suas necessidades.",
   },
   {
     question: "Como funcionam as aulas One a One?",
     answer:
-      "As aulas acontecem online, ao vivo, em horarios que voce escolhe. Cada aula e 100% focada em voce, com material exclusivo preparado de acordo com seus objetivos e nivel atual.",
+      "As aulas acontecem online, ao vivo, em horários que você escolhe. Cada aula é 100% focada em você, com material exclusivo preparado de acordo com seus objetivos e nível atual.",
   },
   {
-    question: "Nunca estudei ingles. Consigo acompanhar?",
+    question: "Nunca estudei inglês. Consigo acompanhar?",
     answer:
-      "Com certeza! Muitos dos meus alunos comecaram do zero. O metodo e personalizado, entao vamos no seu ritmo, construindo uma base solida antes de avancar.",
+      "Com certeza! Muitos dos meus alunos começaram do zero. O método é personalizado, então vamos no seu ritmo, construindo uma base sólida antes de avançar.",
   },
   {
-    question: "Minha agenda e apertada. Como funciona?",
+    question: "Minha agenda é apertada. Como funciona?",
     answer:
-      "Flexibilidade total. Voce escolhe os horarios que funcionam para voce, e pode reagendar quando precisar. Sem estresse, sem rigidez.",
+      "Flexibilidade total. Você escolhe os horários que funcionam para você, e pode reagendar quando precisar. Sem estresse, sem rigidez.",
   },
   {
-    question: "Qual e o material de aula?",
+    question: "Qual é o material de aula?",
     answer:
-      "Todo material e preparado exclusivamente para voce, baseado nos seus objetivos. Usamos recursos variados: videos, textos, exercicios interativos, e muita conversacao pratica.",
+      "Todo material é preparado exclusivamente para você, baseado nos seus objetivos. Usamos recursos variados: vídeos, textos, exercícios interativos, e muita conversação prática.",
   },
 ]
 
 export function FAQ() {
   return (
-    <section id="duvidas" className="py-24 bg-white">
+    <section id="duvidas" className="py-24 bg-slate-50">
       <div className="container mx-auto px-4 max-w-3xl">
         <h2 className="text-3xl md:text-4xl font-bold text-slate-800 text-center mb-12">
-          Duvidas Frequentes
+          Dúvidas Frequentes
         </h2>
 
         <Accordion type="single" collapsible className="space-y-4">
@@ -48,7 +48,7 @@ export function FAQ() {
             <AccordionItem
               key={index}
               value={`item-${index}`}
-              className="bg-slate-50 rounded-xl px-6 border-none"
+              className="bg-white rounded-xl px-6 border-none shadow-sm"
             >
               <AccordionTrigger className="text-left font-semibold text-slate-800 hover:no-underline py-5">
                 {faq.question}
@@ -63,3 +63,4 @@ export function FAQ() {
     </section>
   )
 }
+

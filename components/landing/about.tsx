@@ -4,41 +4,42 @@ import { Instagram } from "lucide-react"
 
 export function About() {
   return (
-    <section id="sobre" className="py-24 bg-slate-50">
+    <section id="sobre" className="py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image */}
           <div className="flex justify-center">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-blue-600 rounded-3xl rotate-3" />
-              <Image
-                src="/images/pedro.jpg"
-                alt="Pedro - Professor de Ingles"
-                width={400}
-                height={500}
-                className="relative rounded-3xl object-cover shadow-2xl"
-              />
+              <div className="w-[300px] h-[300px] rounded-full overflow-hidden border-4 border-white shadow-[0_0_60px_20px_rgba(59,130,246,0.3)]">
+                <Image
+                  src="/images/pedro.jpeg"
+                  alt="Pedro - Professor de Inglês"
+                  width={300}
+                  height={300}
+                  className="w-full h-full object-cover scale-125"
+                />
+              </div>
             </div>
           </div>
 
           {/* Content */}
           <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-800">
-              Quem e Pedro?
+              Quem é Pedro?
             </h2>
             <p className="text-slate-600 leading-relaxed">
-              Sou professor de ingles apaixonado por ensinar de verdade. Nao
-              acredito em turmas lotadas ou metodos genericos. Cada aluno e
-              unico, e cada aula deve refletir isso.
+              Sou professor de inglês apaixonado por ensinar de verdade. Não
+              acredito em turmas lotadas ou métodos genéricos. Cada aluno é
+              único, e cada aula deve refletir isso.
             </p>
             <p className="text-slate-600 leading-relaxed">
-              Meu foco e simples: voce aprende{" "}
+              Meu foco é simples: você aprende{" "}
               <span className="font-semibold text-slate-800">
-                ingles que funciona
+                inglês que funciona
               </span>
-              . Conversacao fluida, confianca genuina, e resultados que voce ve
-              na pratica, em reunioes, viagens, negociacoes, ou simplesmente
-              conversando.
+              . Conversação fluida, confiança genuína, e resultados que você vê
+              na prática: em reuniões, viagens, negociações, ou simplesmente
+              conversando com confiança.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
@@ -82,3 +83,4 @@ export function About() {
     </section>
   )
 }
+
