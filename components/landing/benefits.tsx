@@ -1,13 +1,13 @@
-import { Monitor, Calendar, Grid3X3 } from "lucide-react"
+import { MessageSquare, Calendar, Grid3X3 } from "lucide-react"
 
 const benefits = [
   {
-    icon: Monitor,
+    icon: MessageSquare,
     iconColor: "text-blue-600",
     iconBg: "bg-blue-100",
     title: "100% Personalizado",
     description:
-      "Cada aula e desenhada para voce. Ingles para negocios? Juridico? Turismo? Conversacao casual? Voce escolhe o foco. Material exclusivo, ritmo seu, objetivos seus. Do basico ao avancado.",
+      "Cada aula é desenhada especialmente para você. Inglês para negócios? Jurídico? Turismo? Conversação casual? Você escolhe o foco. Material exclusivo.",
   },
   {
     icon: Calendar,
@@ -15,7 +15,7 @@ const benefits = [
     iconBg: "bg-green-100",
     title: "Flexibilidade Total",
     description:
-      "Aulas 100% online. Seu horario. Sua casa. Qualquer lugar. Sem deslocamento, sem perda de tempo. Reagende quando precisar. Sua agenda e sagrada. Aprender nao deve ser estressante.",
+      "Aulas 100% online. Seu horário. Sua casa. Qualquer lugar. Sem deslocamento, sem perda de tempo. Reagende quando precisar. Sua agenda é sagrada.",
   },
   {
     icon: Grid3X3,
@@ -23,21 +23,21 @@ const benefits = [
     iconBg: "bg-pink-100",
     title: "Resultados Reais",
     description:
-      "Conversacao desde o dia 1. Voce fala, erra, aprende. Desenvolvemos fluencia natural, confianca para apresentacoes, negociacoes e interacoes autenticas. Ingles que funciona na vida real.",
+      "Conversação desde o dia 1. Você fala, erra, aprende. Desenvolvemos fluência natural, confiança para apresentações, negociações e interações autênticas.",
   },
 ]
 
 export function Benefits() {
   return (
-    <section id="metodo" className="py-24 bg-gradient-to-b from-blue-100/50 to-white">
+    <section id="metodo" className="py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
             Por que aulas One a One funcionam?
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto">
-            Enquanto turmas genericas deixam voce para tras, aulas personalizadas
-            te colocam no centro. Aqui, voce aprende o que realmente importa.
+            Enquanto turmas genéricas deixam você para trás, aulas personalizadas
+            te colocam no centro. Aqui, você aprende o que realmente importa.
           </p>
         </div>
 
